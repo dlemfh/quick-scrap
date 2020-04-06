@@ -25,6 +25,7 @@ echo '' >> index.md
 
 # Make reference links
 find _scraps -name '*.md' | \
+	sort | \
 	sed 's|^_scraps/||g' | \
 	sed 's|\.md$||g' | \
 	awk '{printf("[%d]: %s\n", ++i, $0)}' >> index.md
