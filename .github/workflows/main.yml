@@ -5,11 +5,13 @@ on:
     branches: [ master ]
 
 jobs:
-  index-ci:
+  build-index:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
     - name: Install requirements
       run: ./req.sh
     - name: Re-build index page
@@ -22,7 +24,7 @@ jobs:
     - name: Commit changes to PR
       if: success()
       run: |
-        git config --local user.name 'Jethro Lee'
-        git config --local user.email 'dlemfh96@gmail.com'
+        git config user.name 'Jethro Lee'
+        git config user.email 'dlemfh96@gmail.com'
         git commit -am "Automated build"
         git push
