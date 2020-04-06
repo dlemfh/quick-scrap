@@ -24,7 +24,7 @@ jobs:
     - name: Commit changes to PR
       if: success()
       run: |
-        git config user.name 'Jethro Lee'
-        git config user.email 'dlemfh96@gmail.com'
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         git commit -am "Automated build"
         git push
