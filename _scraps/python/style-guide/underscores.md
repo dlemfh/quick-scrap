@@ -4,7 +4,7 @@ link: https://www.python.org/dev/peps/pep-0008/#descriptive-naming-styles
 date: 2020-03-09
 ---
 
-<h2>Usage of Underscores in Python Naming Styles</h2>
+<h2>Usage of Underscores in Python Naming Convention</h2>
 <ul>
 <li><p class="first"><tt class="docutils literal">_single_leading_underscore</tt>: weak "internal use" indicator.
 E.g. <tt class="docutils literal">from M import *</tt> does not import objects whose names start
