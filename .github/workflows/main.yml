@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  index-ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install requirements
+      run: ./req.sh
+    - name: Re-build index page
+      run: ./nav.sh
+    - name: (debugging)
+      if: failure()
+      run: |
+        more tmp/* | cat
+        cat index.md
