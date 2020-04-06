@@ -1,0 +1,30 @@
+---
+---
+
+// Mostly taken and adapted from: https://github.com/pages-themes/cayman
+@import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$header-fg-color: GhostWhite !default;
+$header-bg-color: Crimson !default;
+$header-bg-color-secondary: Coral !default;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+nav {
+  text-decoration: none !important;
+}
+
+.page-header {
+  padding: 2rem;
+  text-align: center;
+  color: $header-fg-color;
+  background-color: $header-bg-color;
+  background-image: linear-gradient(120deg, $header-bg-color, $header-bg-color-secondary);
+}

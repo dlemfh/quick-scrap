@@ -1,0 +1,19 @@
+title: "Quick-Scrap"
+
+collections:
+  assets:
+    output: true
+  scraps:
+    output: true
+    permalink: /:path
+
+defaults:
+  - scope:
+      path: "index.md"
+    values:
+      layout: "home"
+  - scope:
+      path: ""
+      type: "scraps"
+    values:
+      layout: "scrap"

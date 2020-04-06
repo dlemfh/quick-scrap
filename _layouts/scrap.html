@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<ul style="list-style-type: none; padding-left: 0px; margin: 0.1em; font-size: 1.15em;">
+  <li>
+    <a style="text-decoration: none" href="https://dlemfh.github.io/quick-scrap/">🏛️ Home</a>
+    {% assign name = page.url | split: "/" | last | prepend: "/" %}
+    {{ page.url | replace: name, "" | replace: "/", " ❯ 📂 " }}
+    {{ name | replace: "/", " ❯ 📄 " }}
+    <div style="float: right;">
+      <a style="text-decoration: none" href="https://github.com/dlemfh/quick-scrap">🏛️ GitHub</a>
+    </div>
+  </li>
+</ul>
+
+<section class="page-header">
+  <h1 style="font-size: 2.75em; border-bottom: 0px;">
+    {{ page.title }}
+  </h1>
+</section>
+
+<div style="font-size: 1.15em;">
+  {{ content }}
+</div>
+
+<hr style="margin-bottom: 0.1em;">
+<ul style="list-style-type: none; padding-left: 0px; margin: 0em;">
+  <li style="font-size: 0.875em; font-weight: 600; line-height: 1.25;">
+    Original Source: <a href="{{ page.link }}">{{ page.link }}</a>
+    <div style="float: right;">{{ page.date | date: "%Y-%m-%d" }}</div>
+  </li>
+</ul>
