@@ -1,5 +1,5 @@
 ---
-title: Python Modules for Testing
+title: Python Libraries for Testing
 link: https://docs.python-guide.org/writing/tests/
 date: 2020-02-18
 ---

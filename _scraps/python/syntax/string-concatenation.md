@@ -5,7 +5,7 @@ date: 2020-02-18
 ---
 
 <div class="section" id="mutable-and-immutable-types">
-<h2>String Concat</h2>
+<h2>Python Strings are Immutable</h2>
 <p>One peculiarity of Python that can surprise beginners is that
 strings are immutable. This means that when constructing a string from
 its parts, appending each part to the string is inefficient because
