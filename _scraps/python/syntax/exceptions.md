@@ -5,7 +5,7 @@ date: 2020-03-09
 ---
 
 <h3>Writing Exceptions</h3>
-<p class="first"><mark> Derive exceptions from <tt class="docutils literal">Exception</tt> </mark>rather than <tt class="docutils literal">BaseException</tt>.
+<p class="first"><mark>Derive exceptions from <tt class="docutils literal">Exception</tt> </mark>rather than <tt class="docutils literal">BaseException</tt>.
 Direct inheritance from <tt class="docutils literal">BaseException</tt> is reserved for exceptions
 where catching them is almost always the wrong thing to do.</p>
 <p>Design exception hierarchies based on the distinctions that code
