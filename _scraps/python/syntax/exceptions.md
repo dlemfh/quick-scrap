@@ -31,9 +31,9 @@ except ImportError:
 <p>A bare <tt class="docutils literal">except:</tt> clause will catch SystemExit and
 KeyboardInterrupt exceptions, making it harder to interrupt a
 program with Control-C, and can disguise other problems.<mark>  Use
-<tt class="docutils literal">except Exception</tt> </mark>if you
+<tt class="docutils literal">except Exception:</tt> </mark>if you
 want to catch all exceptions that signal program errors. (Bare except is equivalent to <tt class="docutils literal">except
-BaseException</tt>.)</p>
+BaseException:</tt>.)</p>
 <p>A good rule of thumb is to limit use of bare 'except' clauses to two
 cases:</p>
 <ol class="arabic simple">
