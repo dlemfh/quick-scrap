@@ -3,7 +3,7 @@
 ├─&nbsp; 📂 libraries <br />
 │   └─&nbsp; 📄 [testing][1] <br />
 ├─&nbsp; 📂 project-structure <br />
-│   ├─&nbsp; 📄 [django][2] <br />
+│   ├─&nbsp; 📄 [django-apps][2] <br />
 │   └─&nbsp; 📄 [test-suites][3] <br />
 ├─&nbsp; 📂 style-guide <br />
 │   ├─&nbsp; 📄 [dunders][4] <br />
@@ -14,7 +14,7 @@
 &nbsp;&nbsp;&nbsp; └─&nbsp; 📄 [string-concatenation][8] <br />
 
 [1]: python/libraries/testing
-[2]: python/project-structure/django
+[2]: python/project-structure/django-apps
 [3]: python/project-structure/test-suites
 [4]: python/style-guide/dunders
 [5]: python/style-guide/exceptions
