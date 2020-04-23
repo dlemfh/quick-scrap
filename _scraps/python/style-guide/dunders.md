@@ -12,7 +12,9 @@ etc. should be placed after the module docstring but before any import
 statements <em>except</em> <tt class="docutils literal">from __future__</tt> imports.  Python mandates that
 future-imports must appear in the module before any other code except
 docstrings:</p>
-<pre class="literal-block">
+</div>
+
+```py
 """This is the example module.
 
 This module does stuff.
@@ -26,5 +28,4 @@ __author__ = 'Cardinal Biggles'
 
 import os
 import sys
-</pre>
-</div>
+```
