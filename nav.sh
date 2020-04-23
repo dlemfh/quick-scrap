@@ -2,7 +2,7 @@
 
 mkdir tmp
 
-echo '' > index.md
+echo > index.md
 
 # Make navigation tree
 cd _scraps &&
@@ -21,7 +21,7 @@ cat tmp/T5 | \
 cat tmp/T6 | \
 	sed 's/^   /\&nbsp;\&nbsp;\&nbsp;/g' >> index.md
 
-echo '' >> index.md
+echo >> index.md
 
 # Make reference links
 find _scraps -name '*.md' | \
@@ -30,6 +30,6 @@ find _scraps -name '*.md' | \
 	sed 's|\.md$||g' | \
 	awk '{printf("[%d]: %s\n", ++i, $0)}' >> index.md
 
-echo '' >> index.md
+echo >> index.md
 
 rm -rf tmp
