@@ -1,17 +1,17 @@
 
 📂 python <br />
-    📂 libraries <br />
-        📄 [testing][1] <br />
-    📂 project-structure <br />
-        📄 [django][2] <br />
-        📄 [test-suites][3] <br />
-    📂 style-guide <br />
-        📄 [dunders][4] <br />
-        📄 [exceptions][5] <br />
-        📄 [underscores][6] <br />
-    📂 syntax <br />
-        📄 [context-manager][7] <br />
-        📄 [string-concatenation][8] <br />
+├─  📂 libraries <br />
+│   └─  📄 [testing][1] <br />
+├─  📂 project-structure <br />
+│   ├─  📄 [django][2] <br />
+│   └─  📄 [test-suites][3] <br />
+├─  📂 style-guide <br />
+│   ├─  📄 [dunders][4] <br />
+│   ├─  📄 [exceptions][5] <br />
+│   └─  📄 [underscores][6] <br />
+└─  📂 syntax <br />
+&nbsp;&nbsp;&nbsp; ├─  📄 [context-manager][7] <br />
+&nbsp;&nbsp;&nbsp; └─  📄 [string-concatenation][8] <br />
 
 [1]: python/libraries/testing
 [2]: python/project-structure/django
