@@ -19,7 +19,9 @@ cat tmp/T4 | \
 cat tmp/T5 | \
 	sed 's/\.md//g' > tmp/T6
 cat tmp/T6 | \
-	sed 's/^   /\&nbsp;\&nbsp;\&nbsp;/g' >> index.md
+	sed 's/[├└│─]/ /g' > tmp/T7
+cat tmp/T7 | \
+	sed 's/ (?= )/\&nbsp;/g' >> index.md
 
 echo >> index.md
 
